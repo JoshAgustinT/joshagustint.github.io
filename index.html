@@ -138,14 +138,28 @@
 								<a href="https://mars-research.github.io/aburtsev/" target="_blank">Dr. Anton
 									Burtsev. </a>
 
-								My latest project, DRAMBlast, investigates in-memory hash table designs that approach
+								<!-- My latest project, DRAMBlast, investigates in-memory hash table designs that approach
 								the limits of
 								hardware bandwidth. I also co-authored a paper published at ACSAC 2025 examining how the
 								CHERI architecture
-								mitigates kernel vulnerabilities across FreeBSD and Linux.
+								mitigates kernel vulnerabilities across FreeBSD and Linux. -->
 
 
 							</p>
+
+							<div class="col-6 col-12-small">
+								<h3>Education</h3>
+								<p>B.S. Computer Science, University of Utah. Salt Lake City, Utah. 2024.
+									<br>
+									M.S. Computer Science (Thesis), University of Utah. Salt Lake City, Utah. Expected
+									May
+									2026.
+								</p>
+
+							</div>
+
+
+
 							<h3>Research Interests</h3>
 							<p>
 
@@ -157,19 +171,51 @@
 								security in modern OS kernels, and efficient inter-process communication.
 
 
+
 							</p>
+
+							<h3>Research Projects</h3>
+							<ul style="margin-top: -0.5em;">
+								<li>
+									<strong>CHERI:</strong> Co-author on a study of 440 Linux and FreeBSD kernel
+									vulnerabilities, showing that
+									capability-based memory protection (CHERI) can prevent approximately 60% of
+									identified vulnerabilities,
+									including most privilege escalations.
+									<em>In Proceedings of the Annual Computer Security Applications Conference (ACSAC),
+										December 2025.</em>
+								</li>
+								<li>
+									<strong>DRAMBlast:</strong> Co-author on the design of <em>DRAMBlast</em>, a
+									next-generation in-memory hash table
+									that approaches hardware bandwidth limits through a multi-level prefetching scheme,
+									a compute–memory–aware table layout,
+									and a conflict resolution strategy optimized for memory bandwidth utilization.
+									Achieves 3200–5000 Mops for lookups and 2150–2800 Mops for insertions depending on
+									fill factor, on modern servers.
+									<em>Submitted to EuroSys 2026.</em>
+								</li>
+
+								<li>
+									<strong>IPC:</strong> Investigating new hardware primitives for efficient and secure
+									inter-process isolation.
+									The work explores how practical hardware extensions can provide strong subsystem
+									isolation in modern kernels
+									with minimal overhead.
+									<em>Ongoing work with MARS Research Group.</em>
+								</li>
+
+							</ul>
+
+
+
+
+
+
 
 						</div>
 
-						<div class="col-6 col-12-small">
-							<h3>Education</h3>
-							<p>B.S. Computer Science, University of Utah. Salt Lake City, Utah. 2024.
-								<br>
-								M.S. Computer Science (Thesis), University of Utah. Salt Lake City, Utah. Expected May
-								2026.
-							</p>
 
-						</div>
 
 						<div class="col-6 col-12-small">
 							<h3>Contact</h3>
@@ -185,8 +231,8 @@
 							<li><a href="images/homepage/cv.pdf" class="button big" target="_blank">CV</a>
 							</li>
 
-							<li><a href="research.html" class="button big" target="_blank">Research</a>
-							</li>
+							<!-- <li><a href="research.html" class="button big" >Research</a>
+							</li> -->
 
 							<!-- <li><a href="projects.html" class="button big" target="_blank">Projects</a>
 							</li> -->
