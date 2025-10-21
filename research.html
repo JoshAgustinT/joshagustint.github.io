@@ -52,21 +52,35 @@
 
 
 					<!--  -->
-						<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+					<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
 						<div style="flex: 1;">
 							<h2>CHERI</h2>
 
 							<p>
-								Paper analyzing 440 Linux and FreeBSD kernel vulnerabilities, showing that CHERI can
-								prevent
-								60% of vulnerabilities, including most critical privilege escalations. Contributed as a
-								co-author with
+								Study analyzing 440 Linux and FreeBSD kernel vulnerabilities, showing that
+								capability-based memory protection (CHERI)
+								can prevent approximately 60% of identified vulnerabilities, including most critical
+								privilege escalations.
+								This work demonstrates how CHERI’s fine-grained spatial and referential memory safety
+								mitigates common kernel exploitation
+								patterns such as use-after-free, buffer overflow, and privilege escalation attacks,
+								while requiring only a modest engineering
+								effort to adopt. The CHERI team reports that enabling pure-capability execution in the
+								FreeBSD kernel required just
+								seven months of engineering work. Compared to prior studies evaluating the effectiveness
+								of Rust’s safety guarantees,
+								CHERI achieves similar protection (blocking roughly 69% of vulnerabilities versus 85%
+								for Rust) but with significantly lower
+								effort than a Rust port would be, highlighting its potential practicality for porting
+								existing kernels.
+								Research conducted in collaboration with the
 								<a href="https://mars-research.github.io/" target="_blank">MARS Research Group</a>.
 								<br>
-								<b>
-									In Proceedings of the Annual Computer Security Applications Conference (ACSAC),
-									December 2025.</b>
+								<b>Results of this work were published at the Annual Computer Security Applications
+									Conference (ACSAC) 2025.</b>
 							</p>
+
+
 
 
 							<div>
@@ -79,29 +93,35 @@
 						</div>
 					</div>
 
-				<!--  -->
+					<!--  -->
 					<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
 						<div style="flex: 1;">
 							<h2>DRAMBlast</h2>
 							<p>
 							<p>
-								Project focused on the design of <i>DRAMBlast</i>, a next-generation in-memory hash
-								table that reaches the limits of modern hardware bandwidth (Or, as we like to call it:
-								the fastest hash table in the world).
-								This work explores the interaction between CPU execution resources, memory bandwidth,
-								and prefetch behavior to develop practical design principles for ultra-fast hash tables.
-								<i>DRAMBlast</i> achieves 3200–5000 million operations per second (Mops) for lookups and
-								2150–2800 Mops for insertions on a modern two-socket server, reaching performance
-								bounded only by the memory subsystem itself.
-								Key innovations include a multi-level prefetching scheme, a compute and memory aware
-								table layout, and a conflict resolution strategy optimized for memory bandwidth
-								utilization.  Contributed as a
-								co-author with
-								<a href="https://mars-research.github.io/" target="_blank">MARS Research Group</a>.
+								<strong>DRAMBlast:</strong> Designed <i>DRAMBlast</i>, a next-generation in-memory hash
+								table that reaches hardware bandwidth limits
+								and maximizes operational throughput through a multi-level prefetching scheme, a
+								compute–memory–aware table layout,
+								and a conflict-resolution strategy optimized for memory bandwidth utilization.
+								This work explores how CPU execution resources, memory bandwidth, and prefetch behavior
+								interact to define the upper bounds of hash table performance.
+								We achieve 3,200–5,000 million operations per second (Mops) for lookups and 2,150–2,800
+								Mops for insertions depending on fill factor,
+								matching the maximum DRAM random read throughput reported by Intel MLC.
+								This upper memory subsystem limit was also independently verified,
+								making <i>DRAMBlast</i> the fastest hash table to date and outperforming
+								<a href="https://mars-research.github.io/projects/dramhit/" target="_blank">DRAMHiT</a>.
+								<!-- Key innovations include a multi-level prefetching hierarchy, a compute–memory–balanced
+								table layout,
+								and a conflict-resolution scheme tuned for memory bandwidth utilization. -->
+								Research conducted in collaboration with the <a href="https://mars-research.github.io/"
+									target="_blank">MARS Research Group</a>.
 								<br>
-								<b>Submitted to EuroSys 2026.</b>
-
+								<b>Paper submitted and under review for the European Conference on Computer Systems
+									(EuroSys) 2026.</b>
 							</p>
+
 
 							<div>
 								<a href="images/research/poster_v6.pdf" class="button big" target="_blank">Poster</a>
@@ -130,28 +150,31 @@
 
 
 					<!--  -->
-				
+
 
 					<!--  -->
 
 					<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
 						<div style="flex: 1;">
-							
-							
 
-<h2>IPC</h2>
-<p>
-  This project explores hardware–software co-design principles for practical fine-grained inter-process isolation. 
-  It proposes a set of design principles and a gem5 based prototype of a hardware isolation scheme that achieves 
-  strong isolation with minimal hardware extensions and performance overhead. 
-  The goal is to enable efficient, low-cost isolation within complex operating system kernels by leveraging 
-  lightweight architectural support.
-  Research being conducted with 
-  <a href="https://mars-research.github.io/" target="_blank">MARS Research Group</a>.
-</p>
 
-<br>
-<b>Ongoing work</b>
+
+							<h2>IPC</h2>
+							<p>
+								This project explores hardware–software co-design principles for practical fine-grained
+								inter-process isolation.
+								It proposes a set of design principles and a gem5 based prototype of a hardware
+								isolation scheme that achieves
+								strong isolation with minimal hardware extensions and performance overhead.
+								The goal is to enable efficient, low-cost isolation within complex operating system
+								kernels by leveraging
+								lightweight architectural support.
+								Research being conducted with
+								<a href="https://mars-research.github.io/" target="_blank">MARS Research Group</a>.
+							</p>
+
+							<br>
+							<b>Ongoing work</b>
 
 
 
