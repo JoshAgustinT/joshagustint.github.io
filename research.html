@@ -54,6 +54,29 @@
 					<!--  -->
 					<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
 						<div style="flex: 1;">
+							<h2>Trusted Execution Environments</h2>
+
+							<p>
+								Trusted execution environments (TEEs), such as Intel TDX, AMD SEV-SNP, and Arm CCA, protect code
+								and data from the rest of the system, but their protections (memory encryption, secure interconnects,
+								and attestation) can significantly slow down data-intensive workloads. This project characterizes where
+								these costs come from as data moves between CPUs, GPUs, and other accelerators on heterogeneous edge
+								platforms, and develops software and hardware techniques to reduce them while keeping strong isolation
+								as a baseline.
+								Research conducted at the University of British Columbia.
+								<br>
+								<b>Ongoing work</b>
+							</p>
+
+							<hr class="major" />
+						</div>
+					</div>
+
+
+
+					<!--  -->
+					<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
+						<div style="flex: 1;">
 							<h2>CHERI</h2>
 
 							<p>
@@ -84,6 +107,7 @@
 
 
 							<div>
+								<a href="https://ieeexplore.ieee.org/document/11391870" class="button big" target="_blank">Paper</a>
 								<!-- <a href="images/research/poster_v6.pdf" class="button big" target="_blank">Poster</a> -->
 								<!-- <li><a href="images/homepage/cv-website.pdf" class="button big" target="_blank">CV [pdf]</a> -->
 
@@ -118,8 +142,7 @@
 								Research conducted in collaboration with the <a href="https://mars-research.github.io/"
 									target="_blank">MARS Research Group</a>.
 								<br>
-								<b>Paper submitted and under review for the European Conference on Computer Systems
-									(EuroSys) 2026. (Title modified for anonymity.)</b>
+								<b>Paper submitted and under review. (Title modified for anonymity.)</b>
 							</p>
 
 
@@ -149,49 +172,6 @@
 
 
 
-					<!--  -->
-
-
-					<!--  -->
-
-					<div style="display: flex; align-items: center; justify-content: space-between; gap: 20px;">
-						<div style="flex: 1;">
-
-
-
-							<h2>IPC</h2>
-							<p>
-								This project explores hardware–software co-design principles for practical fine-grained
-								inter-process isolation.
-								It proposes a set of design principles and a gem5 based prototype of a hardware
-								isolation scheme that achieves
-								strong isolation with minimal hardware extensions and performance overhead.
-								The goal is to enable efficient, low-cost isolation within complex operating system
-								kernels by leveraging
-								lightweight architectural support.
-								Research being conducted with
-								<a href="https://mars-research.github.io/" target="_blank">MARS Research Group</a>.
-
-
-								<br>
-								<b>Ongoing work</b>
-							</p>
-
-
-							<div>
-								<!-- <a href="images/research/poster_v6.pdf" class="button big" target="_blank">Poster</a> -->
-								<!-- <li><a href="images/homepage/cv-website.pdf" class="button big" target="_blank">CV [pdf]</a> -->
-
-							</div>
-
-							<!-- <hr class="major" /> -->
-						</div>
-					</div>
-
-					<!--  -->
-
-
-					<hr class="major" />
 					<!-- End Entry-->
 
 
@@ -258,57 +238,8 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-				<!-- Menu -->
-				<nav id="menu">
-					<header class="major">
-						<h2>Joshua Tlatelpa-Agustin</h2>
-					</header>
-
-					<ul>
-						<li><a href="index.html">Homepage</a></li> <!-- index page -->
-						<!-- <li><a href="projects.html">Projects</a></li> generic page -->
-						<li><a href="research.html">Research</a></li> <!-- generic page -->
-						<!-- <li><a href="coursework.html">Academics</a></li> elements page -->
-						<li>
-							<span class="opener">Hobbies</span>
-							<ul>
-								<li><a href="photography.html">Photography</a></li> <!-- generic page -->
-								<li><a href="music.html">Music</a></li> <!-- generic page -->
-								<li><a href="hardware.html">Tech Stuff</a></li> <!-- generic page -->
-
-							</ul>
-						</li>
-						<li><a href="about.html">About</a></li> <!-- elements page template-->
-						<!-- <li>
-                            <span class="opener">Submenu</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li> -->
-						<!-- <li><a href="#">Etiam Dolore</a></li>
-                        <li><a href="#">Adipiscing</a></li>
-                        <li>
-                            <span class="opener">Another Submenu</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Maximus Erat</a></li>
-                        <li><a href="#">Sapien Mauris</a></li>
-                        <li><a href="#">Amet Lacinia</a></li> -->
-					</ul>
-				</nav>
-
-			</div>
-		</div>
+		<div id="sidebar"></div>
+		<script src="assets/js/sidebar.js"></script>
 
 	</div>
 

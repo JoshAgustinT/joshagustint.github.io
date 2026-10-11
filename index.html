@@ -7,7 +7,7 @@
 <html>
 
 <head>
-	<title>Homepage</title>
+	<title>Joshua Tlatelpa-Agustin</title>
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 	<link rel="stylesheet" href="assets/css/main.css" />
@@ -28,7 +28,7 @@
 				<section id="banner">
 					<!-- style="border: 2px solid black; padding: 20px;" -->
 					<div class="content">
-						<h1>Homepage</h1>
+						<h1>Joshua Tlatelpa-Agustin</h1>
 
 
 						<!-- <div style="border: 2px solid black; position: relative;  width: 50%; max-width: 700px; margin: auto; padding: 2%;">
@@ -123,20 +123,12 @@
 								<a href="https://mars-research.github.io/aburtsev/"target="_blank">Dr. Anton Burtsev</a>
 								that involves writing the fastest hash table in the world! -->
 
-								Hello! I’m Joshua Tlatelpa-Agustin, a Master’s student in Computer Science at the
-								University of Utah.
-								My research focuses on improving system performance and security by analyzing and
-								optimizing the
-								interactions between hardware and software. I’m part of the
-
-								<!-- MARS Research Group  -->
-								<a href="https://mars-research.github.io/" target="_blank">MARS Research Group</a>
-
-								led by
-								<!-- Dr. Anton Burtsev. -->
-
-								<a href="https://mars-research.github.io/aburtsev/" target="_blank">Dr. Anton
-									Burtsev. </a>
+								Hello! I’m Joshua Tlatelpa-Agustin, a PhD student in Computer Science at the
+								University of British Columbia.
+								My research focuses on improving system performance and security by analyzing and optimizing the
+								interactions between hardware and software. I’m co-advised by
+								<a href="https://aasthakm.github.io/" target="_blank">Dr. Aastha Mehta</a> and
+								<a href="https://arpangujarati.github.io/" target="_blank">Dr. Arpan Gujarati</a>.
 
 
 
@@ -146,6 +138,8 @@
 							<div class="col-6 col-12-small">
 								<h3>Education</h3>
 								<p>
+									Ph.D. Computer Science, University of British Columbia. Vancouver, British Columbia. Expected 2030.
+									<br>
 									M.S. Computer Science (Thesis), University of Utah. Salt Lake City, Utah. May 2026.
 									<br>
 									B.S. Computer Science, University of Utah. Salt Lake City, Utah. 2024.
@@ -159,12 +153,12 @@
 							<h3>Research Interests</h3>
 							<p>
 
-								I’m interested in high-performance computing, operating systems, and
+								I'm interested in high-performance computing, operating systems, and
 								computer architecture, with a focus on how low-level system design can improve
 								both efficiency and security. My current research explores optimizing system
 								performance at the boundary between hardware and software, including techniques
 								for memory subsystem optimization, compiler-driven performance tuning, capability-based
-								security in modern OS kernels, and efficient inter-process communication.
+								security in modern OS kernels, and efficient trusted execution for high-throughput workloads.
 
 
 
@@ -174,18 +168,17 @@
 							<h3>Publications</h3>
 							<ul style="margin-top: -0.5em; list-style-type: disc; padding-left: 1.5em;">
 								<li>
-									Zhaofeng Li, Jerry Zhang, Joshua Tlatelpa-Agustin, Xiangdong Chen,
+									Zhaofeng Li, Jerry Zhang, <b>Joshua Tlatelpa-Agustin</b>, Xiangdong Chen,
 									and Anton Burtsev.
-									<em>Understanding the Security Impact of CHERI on the Operating System Kernel.</em>
+									<a href="https://ieeexplore.ieee.org/document/11391870" target="_blank"><em>Understanding the Security Impact of CHERI on the Operating System Kernel.</em></a>
 									In <em>Proceedings of the Annual Computer Security Applications Conference
 										(ACSAC)</em>, December 2025.
 								</li>
 
 								<li>
-									Jerry Zhang, Joshua Tlatelpa-Agustin, and Anton Burtsev.
+									Jerry Zhang, <b>Joshua Tlatelpa-Agustin</b>, and Anton Burtsev.
 									<em>DRAMHiTv2: Towards the fastest hash table operating at the speed of DRAM.</em>
-									Submitted to the <em>European Conference on Computer Systems (EuroSys)</em>, April
-									2026. (Title modified for anonymity.)
+									Under review. (Title modified for anonymity.)
 								</li>
 
 							</ul>
@@ -195,6 +188,12 @@
 
 							<h3>Research Projects</h3>
 							<ul style="margin-top: -0.5em;">
+								<li>
+									<strong>TEEs:</strong> Characterizing and reducing the performance costs of trusted execution
+									environments (TEEs) for high-throughput workloads, as sensitive data moves between CPUs, GPUs,
+									and other accelerators on edge platforms. <em>Ongoing work at UBC.</em>
+								</li>
+
 								<li>
 									<strong>CHERI:</strong> Study of 440 Linux and FreeBSD kernel
 									vulnerabilities, showing that
@@ -208,24 +207,12 @@
 									hash table
 									that reaches hardware bandwidth limits and maximizes operational throughput through
 									a multi-level prefetching scheme,
-									a compute–memory–aware table layout, and a conflict-resolution strategy optimized
+									a compute-memory-aware table layout, and a conflict-resolution strategy optimized
 									for memory bandwidth utilization.
-									We achieve 3,200–5,000 million operations per second (Mops) for lookups and
-									2,150–2,800 Mops for insertions depending on fill factor,
+									We achieve 3,200-5,000 million operations per second (Mops) for lookups and
+									2,150-2,800 Mops for insertions depending on fill factor,
 									making it the fastest hash table to date (faster than <a
 										href="https://mars-research.github.io/projects/dramhit/">DRAMHiT</a>).
-
-								</li>
-
-
-								<li>
-									<strong>IPC:</strong> Investigating new hardware primitives for efficient and
-									secure
-									inter-process isolation.
-									This work explores how practical hardware extensions can provide strong subsystem
-									isolation in modern kernels
-									with minimal overhead.
-									<em>Ongoing work with <a href="https://mars-research.github.io/" target="_blank">Mars Research Group</a>.</em>
 
 								</li>
 
@@ -244,7 +231,7 @@
 
 						<div class="col-6 col-12-small">
 							<h3>Contact</h3>
-							<p>Email: joshua.t@utah.edu</p>
+							<p>Email: joshta@cs.ubc.ca<br>Publications: <a href="https://dblp.org/pid/428/8681.html" target="_blank">DBLP</a></p>
 						</div>
 
 
@@ -339,57 +326,8 @@
 		</div>
 
 		<!-- Sidebar -->
-		<div id="sidebar">
-			<div class="inner">
-				<!-- Menu -->
-				<nav id="menu">
-					<header class="major">
-						<h2>Joshua Tlatelpa-Agustin</h2>
-					</header>
-
-					<ul>
-						<li><a href="index.html">Homepage</a></li> <!-- index page -->
-						<!-- <li><a href="projects.html">Projects</a></li> generic page -->
-						<li><a href="research.html">Research</a></li> <!-- generic page -->
-						<!-- <li><a href="coursework.html">Academics</a></li> elements page -->
-						<li>
-							<span class="opener">Hobbies</span>
-							<ul>
-								<li><a href="photography.html">Photography</a></li> <!-- generic page -->
-								<li><a href="music.html">Music</a></li> <!-- generic page -->
-								<li><a href="hardware.html">Tech Stuff</a></li> <!-- generic page -->
-
-							</ul>
-						</li>
-						<li><a href="about.html">About</a></li> <!-- elements page template-->
-						<!-- <li>
-                            <span class="opener">Submenu</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li> -->
-						<!-- <li><a href="#">Etiam Dolore</a></li>
-                        <li><a href="#">Adipiscing</a></li>
-                        <li>
-                            <span class="opener">Another Submenu</span>
-                            <ul>
-                                <li><a href="#">Lorem Dolor</a></li>
-                                <li><a href="#">Ipsum Adipiscing</a></li>
-                                <li><a href="#">Tempus Magna</a></li>
-                                <li><a href="#">Feugiat Veroeros</a></li>
-                            </ul>
-                        </li>
-                        <li><a href="#">Maximus Erat</a></li>
-                        <li><a href="#">Sapien Mauris</a></li>
-                        <li><a href="#">Amet Lacinia</a></li> -->
-					</ul>
-				</nav>
-
-			</div>
-		</div>
+		<div id="sidebar"></div>
+		<script src="assets/js/sidebar.js"></script>
 
 	</div>
 
